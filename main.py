@@ -11,7 +11,7 @@ _url = sys.argv[0]
 _handle = int(sys.argv[1])
 
 def getList():
-    jsonStr = urllib2.urlopen('http://***/onepiece.json').read()
+    jsonStr = urllib2.urlopen('https://raw.githubusercontent.com/EvilCult/kodi-video-pulgin-test/master/onepiece.json').read()
     data = json.loads(jsonStr)
 
     tvDict = {}
