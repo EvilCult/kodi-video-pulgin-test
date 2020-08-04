@@ -40,7 +40,7 @@ def getVideo(chapter):
 
 def parseRealUrl(url):
     if url.find('iqiyi') > 0:
-        api = 'https://app.tf.js.cn/jxds/api.php?url=%s&danmu=0' % (url)
+        api = 'https://app.tf.js.cn/jx/api.php?url=%s&danmu=0' % (url)
         try:
             jsonStr = urllib2.urlopen(api).read()
             data = json.loads(jsonStr)
